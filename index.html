@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>SpeechSynthesis</title>
+</head>
+
+<body>
+    <section class="container">
+        <div id="text" contenteditable>Digite seu texto aqui.</div>
+
+        <div class="centered_block">
+            <label for="ptBr">Português</label>
+            <input type="radio" name="language" id="ptBR" value="pt-BR" checked>
+            <label for="enUs">Inglês</label>
+            <input type="radio" name="language" id="enUS" value="en-US">
+        </div>
+
+        <div class="centered_block inline_block">
+            <label for="range">Velocidade:</label>
+            <input type="range" id="range" name="range" min="1" max="3">
+        </div>
+
+        <div class="centered_block">
+            <button class="speak_button" id="speak">Falar</button>
+            <button class="stop_button" id="stop">Parar</button>
+        </div>
+    </section>
+
+    <script src="./js/scrips.js"></script>
+</body>
+
+</html>

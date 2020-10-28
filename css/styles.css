@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    font-family: 'Archivo', sans-serif;
+    background: linear-gradient(to top right, #851285, #6868f0);
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    margin: 0 auto;
+    padding: 1.6rem;
+    border-radius: .8rem;
+    width: 450px;
+    /*height: 250px;*/
+
+    background: white;
+}
+
+#text {
+    margin-bottom: .8rem;
+    padding: .4rem;
+    width: 100%;
+
+    max-height: 270px;
+    overflow: auto;
+
+    text-align: center;
+    outline: none;
+    border: 1px solid #111;
+    border-radius: .4rem;
+}
+#text::-webkit-scrollbar {
+    width: 0;
+}
+
+input[type="radio"] {
+    outline: none;
+    margin-right: 1.2rem;
+}
+input[type="radio"]:last-child {
+    margin-right: 0;
+}
+
+input[type="range"] {
+    outline: none;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12pt;
+    font-weight: 500;
+    
+    padding: .6rem;
+    width: 4.6rem;
+    
+    border: none;
+    border-radius: .4rem;
+    outline: none;
+    cursor: pointer;
+}
+button.speak_button {
+    background: #14a514;
+    margin-right: .6rem;
+    transition: .4s;
+}
+button.speak_button:hover {
+    background: #0e770e;
+}
+button.stop_button {
+    background: #c91616;
+    transition: .4s;
+}
+button.stop_button:hover {
+    background: #8a0f0f;
+}
+
+.centered_block {
+    text-align: center;
+    margin-top: .8rem;
+}
+.centered_block:last-child {
+    display: flex;
+    justify-content: center;
+}
