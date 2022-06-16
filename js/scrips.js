@@ -26,11 +26,11 @@ function setText(event) {
 
 function setSpeed() {
     if(inputRange.value == 1) {
-        utterance.rate = 1;
+        utterance.rate = 0.5;
     } else if(inputRange.value == 2) {
         utterance.rate = 1.5;
     } else if(inputRange.value == 3) {
-        utterance.rate = 2;
+        utterance.rate = 4;
     }
 }
 
@@ -41,3 +41,8 @@ function setLanguage() {
         utterance.lang = 'en-US';
     }
 }
+
+const txt = document.querySelector("#text");
+txt.addEventListener('focus', () => {
+    if(txt.textContent === 'Digite seu texto aqui.') txt.textContent = '';
+});
